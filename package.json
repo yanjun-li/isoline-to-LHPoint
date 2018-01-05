@@ -1,0 +1,28 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "isoLinestring to LHPoint server",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --watch",
+    "restart": "pm2 restart index.js",
+    "stop": "pm2 stop index.js",
+    "dev": "babel-node index.js",
+    "build": "babel src -d dist -s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'Eugene' <'18818272740@163.com'>",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "@turf/turf": "^5.1.6",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  }
+}
